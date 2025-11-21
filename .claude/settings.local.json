@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(do sed -i \"s|import LocationForm from ''../../components/locationForm.astro'';|import LocationForm from ''../../components/locationForm.astro'';\\nimport GoogleAnalytics from ''../../components/GoogleAnalytics.astro'';|g\" \"$file\")",
+      "Bash(do sed -i \"s|<head>|<head>\\n    <GoogleAnalytics />|g\" \"$file\")",
+      "Bash(do sed -i \"s|<script src=\"\"https://cdn.tailwindcss.com/3.4.1\"\"></script>|<script src=\"\"https://cdn.tailwindcss.com\"\"></script>\\n    <style>\\n        @import url(''https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800\\&display=swap'');\\n        * { font-family: ''Inter'', sans-serif; }\\n    </style>|g\" \"$file\")",
+      "Bash(do sed -i ':a;N;$!ba;s|</style>\\n    <style>\\n        @import url(''''https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap'''');\\n        \\* { font-family: ''''Inter'''', sans-serif; }\\n    </style>||g' \"$file\")",
+      "Bash(do sed -i 'N;s|</style>\\n    <style>||g' \"$file\")",
+      "Bash(do)",
+      "Bash(perl:*)",
+      "Bash(powershell -Command:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

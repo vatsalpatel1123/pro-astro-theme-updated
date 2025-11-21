@@ -1,14 +1,16 @@
 ---
 // src/pages/great-neck.astro
 // Location Page: Great Neck, NY
-import Navigation from '../components/Navigation.astro';
-import Footer from '../components/Footer.astro';
-import LocationForm from '../components/locationForm.astro';
+import Navigation from '../../components/Navigation.astro';
+import Footer from '../../components/Footer.astro';
+import LocationForm from '../../components/locationForm.astro';
+import GoogleAnalytics from '../../components/GoogleAnalytics.astro';
 ---
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <GoogleAnalytics />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -55,7 +57,7 @@ import LocationForm from '../components/locationForm.astro';
     }
     </script>
 
-    <script src="https://cdn.tailwindcss.com/3.4.1"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
