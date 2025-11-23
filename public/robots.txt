@@ -1,0 +1,79 @@
+# robots.txt for Long Island Home Buyers
+# https://longislandhomebuyers.org/
+# Optimized for local real estate SEO
+
+# Allow all major search engines to crawl the site
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://longislandhomebuyers.org/sitemap.xml
+
+# Block access to private/admin directories (if they exist in the future)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /draft/
+Disallow: /_astro/
+
+# Block access to API endpoints and form handlers
+Disallow: /api/
+
+# Allow crawling of all location pages (important for local SEO)
+Allow: /locations/
+
+# Allow crawling of all public pages
+Allow: /about
+Allow: /contact
+Allow: /how-it-works
+Allow: /sell-property
+Allow: /situations
+Allow: /blog
+
+# Specific bot configurations for better indexing
+
+# Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Googlebot Image
+User-agent: Googlebot-Image
+Allow: /
+Disallow: /phbremove.png
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+# Yahoo
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+# Yandex
+User-agent: Yandex
+Allow: /
+Crawl-delay: 2
+
+# Block bad bots and scrapers
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: dotbot
+Disallow: /
+
+User-agent: rogerbot
+Crawl-delay: 10
+
