@@ -1,0 +1,363 @@
+---
+// src/pages/terms-of-service.astro
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+import GoogleAnalytics from '../components/GoogleAnalytics.astro';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <GoogleAnalytics />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | Long Island Home Buyers</title>
+    <meta name="description" content="Terms of Service for Long Island Home Buyers - Pro Home Buyers LLC. Read our terms, SMS program details, and legal information.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-pattern {
+            background-image:
+                linear-gradient(to right, #f1f5f9 1px, transparent 1px),
+                linear-gradient(to bottom, #f1f5f9 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        .legal-content h2 {
+            scroll-margin-top: 120px;
+        }
+
+        .legal-content a {
+            color: #2563eb;
+            text-decoration: underline;
+        }
+
+        .legal-content a:hover {
+            color: #1e40af;
+        }
+    </style>
+</head>
+<body class="bg-slate-50">
+    <!-- Navigation -->
+    <Navigation />
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 hero-pattern py-16 md:py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-4xl mx-auto">
+                <div class="inline-block mb-4">
+                    <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold">
+                        Legal Information
+                    </span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
+                    Terms of Service
+                </h1>
+                <p class="text-lg text-slate-600">
+                    Effective Date: December 3, 2025
+                </p>
+                <p class="text-md text-slate-600 mt-2">
+                    <strong>Business Name:</strong> Pro Home Buyers LLC, doing business as Long Island Homebuyers<br/>
+                    <strong>Registered Address:</strong> 418 Broadway STE N, Albany, NY 12207
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-slate-50 border-l-4 border-blue-600 p-6 rounded-r-lg mb-12">
+                <p class="text-slate-700 leading-relaxed">
+                    Please read these Terms of Service ("Terms") carefully before using our website, communications, or related services (collectively, the "Services") provided by Long Island Homebuyers ("Company," "we," "us," or "our").
+                    <br/><br/>
+                    <strong>By accessing or using our Services</strong> — including submitting property information, requesting an offer, or opting into our SMS messaging program — you agree to be bound by these Terms and our <a href="/privacy-policy">Privacy Policy</a>.
+                </p>
+            </div>
+
+            <div class="legal-content space-y-12 text-slate-700">
+                <!-- Section 1 -->
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-4">1. Eligibility</h2>
+                    <p class="leading-relaxed">
+                        You must be at least 18 years old and legally capable of entering into a contract. By using our Services, you confirm that you meet these eligibility requirements.
+                    </p>
+                </div>
+
+                <!-- Section 2 -->
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-4">2. Services Provided</h2>
+                    <p class="leading-relaxed mb-4">
+                        Long Island Homebuyers provides real estate consulting, property purchasing, and related advisory services to homeowners and investors.
+                    </p>
+                    <p class="font-semibold mb-2">Our Services may include:</p>
+                    <ul class="list-disc list-inside space-y-2 ml-4">
+                        <li>Property evaluations and purchase offers</li>
+                        <li>Scheduling and appointment confirmations</li>
+                        <li>Follow-ups and service-related communications</li>
+                        <li>Text message notifications related to inquiries or services</li>
+                    </ul>
+                    <p class="leading-relaxed mt-4">
+                        We provide Services through our website, phone, email, and SMS messaging channels.
+                    </p>
+                </div>
+
+                <!-- Section 3 -->
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-4">3. SMS Messaging Program</h2>
+
+                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-6">
+                        <p class="font-bold text-blue-900 mb-2">Program Name: Long Island Homebuyers Contact Alerts</p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-lg font-semibold text-slate-900 mb-2">Program Description:</h3>
+                            <p class="leading-relaxed">
+                                By opting into the Long Island Homebuyers Contact Alerts program, you agree to receive text messages related to property inquiries, appointment confirmations, service updates, and follow-ups regarding services you expressed interest in. Message frequency typically ranges from 3–5 messages per month, depending on your engagement with our team.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-lg font-semibold text-slate-900 mb-2">Opt-Out Instructions:</h3>
+                            <p class="leading-relaxed">
+                                You can cancel the SMS service at any time. Simply text <strong>"STOP"</strong> to our number. Upon sending "STOP," we will confirm your unsubscribe status via SMS. After this confirmation, you will no longer receive messages from us.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-lg font-semibold text-slate-900 mb-2">Rejoining Instructions:</h3>
+                            <p class="leading-relaxed">
+                                To resume receiving messages, sign up again through our website or text <strong>"START"</strong> to our number, and we will resume sending messages to you.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-lg font-semibold text-slate-900 mb-2">Help Instructions:</h3>
+                            <p class="leading-relaxed mb-3">
+                                If you experience issues with the messaging program, reply <strong>"HELP"</strong> for assistance, or contact us directly at:
+                            </p>
+                            <ul class="space-y-2 ml-4">
+                                <li>📧 Email: <a href="mailto:info@longislandhomebuyers.org">info@longislandhomebuyers.org</a></li>
+                                <li>📞 Phone: <a href="tel:7172887300">717-288-7300</a></li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3 class="text-lg font-semibold text-slate-900 mb-2">Carrier Liability Disclaimer:</h3>
+                            <p class="leading-relaxed">
+                                Carriers are not liable for delayed or undelivered messages.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-lg font-semibold text-slate-900 mb-2">Message and Data Rates:</h3>
+                            <p class="leading-relaxed">
+                                Message and data rates may apply for messages sent to you from us and to us from you. Message frequency varies. For questions about your text or data plan, contact your wireless provider.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-lg font-semibold text-slate-900 mb-2">Privacy Policy:</h3>
+                            <p class="leading-relaxed">
+                                For information about how we handle your data, please refer to our Privacy Policy:<br/>
+                                <a href="/privacy-policy">https://longislandhomebuyers.org/privacy-policy/</a>
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-lg font-semibold text-slate-900 mb-2">Data Protection Standard:</h3>
+                            <p class="leading-relaxed">
+                                No mobile information will be sold or distributed to external parties. Text messaging originator opt-in data and consent will not be sold or transferred, except to providers that support SMS delivery and customer communication.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-lg font-semibold text-slate-900 mb-2">Compliance with Industry Standards:</h3>
+                            <p class="leading-relaxed">
+                                This messaging program complies with CTIA Messaging Principles and Best Practices, the Telephone Consumer Protection Act (TCPA), and all applicable federal and state regulations.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-lg font-semibold text-slate-900 mb-2">Legal Compliance Note:</h3>
+                            <p class="leading-relaxed">
+                                By participating in our SMS program, you affirm that you have read and agree to these Terms and that you comply with all applicable federal, state, and local laws, including New York regulations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 4 -->
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-4">4. User Responsibilities</h2>
+                    <p class="leading-relaxed mb-3">You agree not to:</p>
+                    <ul class="list-disc list-inside space-y-2 ml-4 mb-4">
+                        <li>Use our Services for any illegal or unauthorized purpose</li>
+                        <li>Provide false, misleading, or inaccurate information</li>
+                        <li>Interfere with or disrupt our Services</li>
+                        <li>Violate any applicable laws, including New York State regulations</li>
+                    </ul>
+                    <p class="leading-relaxed">
+                        You are responsible for ensuring that the information you provide — including property details, contact information, and consent for communication — is accurate and up to date.
+                    </p>
+                </div>
+
+                <!-- Section 5 -->
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-4">5. Intellectual Property</h2>
+                    <p class="leading-relaxed">
+                        All content, trademarks, graphics, and intellectual property associated with our Services are owned by Long Island Homebuyers or its licensors and are protected by law. You may not copy, reproduce, distribute, or use our content without prior written permission.
+                    </p>
+                </div>
+
+                <!-- Section 6 -->
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-4">6. No Brokerage or Agency Relationship</h2>
+                    <p class="leading-relaxed">
+                        Long Island Homebuyers is not a licensed real estate brokerage. We purchase properties directly or through our investor partners. Using our Services does not create a brokerage, agency, or fiduciary relationship.
+                    </p>
+                </div>
+
+                <!-- Section 7 -->
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-4">7. Disclaimers</h2>
+                    <p class="leading-relaxed mb-4">
+                        Our Services are provided on an "AS IS" and "AS AVAILABLE" basis. All property evaluations, market insights, repair estimates, or timelines provided by Long Island Homebuyers are informational in nature and may change based on market conditions or additional property details.
+                    </p>
+                    <p class="leading-relaxed mb-3">We do not guarantee that:</p>
+                    <ul class="list-disc list-inside space-y-2 ml-4 mb-4">
+                        <li>Valuations or estimates will match future appraisals or market prices</li>
+                        <li>Timelines, availability, or offers will remain the same</li>
+                        <li>Website or communication services will operate without interruption</li>
+                    </ul>
+                    <p class="leading-relaxed">
+                        By using our Services, you acknowledge that real estate transactions involve uncertainty and accept that you are responsible for your own decisions.
+                    </p>
+                </div>
+
+                <!-- Section 8 -->
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-4">8. Limitation of Liability</h2>
+                    <p class="leading-relaxed mb-3">
+                        To the fullest extent permitted by law, Long Island Homebuyers shall not be liable for:
+                    </p>
+                    <ul class="list-disc list-inside space-y-2 ml-4 mb-4">
+                        <li>Indirect, incidental, or consequential damages</li>
+                        <li>Loss of profits or business interruption</li>
+                        <li>Errors or delays in information transmission</li>
+                    </ul>
+                    <p class="leading-relaxed">
+                        Our total liability shall not exceed the greater of:<br/>
+                        (a) $100 or<br/>
+                        (b) The amount you paid (if any) for the specific service giving rise to the claim.
+                    </p>
+                </div>
+
+                <!-- Section 9 -->
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-4">9. Indemnification</h2>
+                    <p class="leading-relaxed">
+                        You agree to defend, indemnify, and hold harmless Long Island Homebuyers, its owners, employees, and partners from any claims, losses, or damages arising out of your use of our Services or violation of these Terms.
+                    </p>
+                </div>
+
+                <!-- Section 10 -->
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-4">10. Governing Law</h2>
+                    <p class="leading-relaxed">
+                        These Terms are governed by the laws of the State of New York. Any legal action must be filed in a court of competent jurisdiction located in Albany County, New York.
+                    </p>
+                </div>
+
+                <!-- Section 11 -->
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-4">11. Termination</h2>
+                    <p class="leading-relaxed">
+                        We may suspend or terminate your access to the Services at any time for any reason, including violation of these Terms or unlawful behavior.
+                    </p>
+                </div>
+
+                <!-- Section 12 -->
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-4">12. Changes to These Terms</h2>
+                    <p class="leading-relaxed">
+                        We may revise these Terms at any time to reflect updates to our practices or compliance requirements. The Effective Date at the top of this document reflects the most recent version. Your continued use of the Services constitutes acceptance of any updated Terms.
+                    </p>
+                </div>
+
+                <!-- Section 13 -->
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-4">13. Contact Information</h2>
+                    <p class="leading-relaxed mb-3">For questions about these Terms or for support, contact us:</p>
+                    <div class="bg-slate-50 border border-slate-200 rounded-lg p-6">
+                        <p class="font-semibold text-slate-900 mb-3">Long Island Homebuyers (Pro Home Buyers LLC)</p>
+                        <ul class="space-y-2">
+                            <li>📍 <strong>Address:</strong> 418 Broadway STE N, Albany, NY 12207</li>
+                            <li>📧 <strong>Email:</strong> <a href="mailto:info@longislandhomebuyers.org">info@longislandhomebuyers.org</a></li>
+                            <li>📞 <strong>Phone:</strong> <a href="tel:7172887300">717-288-7300</a></li>
+                            <li>🌐 <strong>Website:</strong> <a href="https://longislandhomebuyers.org/">https://longislandhomebuyers.org/</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related Links -->
+            <div class="mt-12 pt-8 border-t border-slate-200">
+                <p class="text-slate-600 text-center">
+                    Also see our <a href="/privacy-policy" class="text-blue-600 hover:text-blue-800 underline font-semibold">Privacy Policy</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <Footer />
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop"
+            class="fixed bottom-8 right-8 bg-blue-600 text-white w-12 h-12 rounded-full shadow-lg hover:bg-blue-700 transition opacity-0 pointer-events-none"
+            onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        <svg class="w-6 h-6 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+        </svg>
+    </button>
+
+    <script is:inline>
+        // Scroll to top button visibility
+        const scrollBtn = document.getElementById('scrollToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollBtn.classList.remove('opacity-0', 'pointer-events-none');
+                scrollBtn.classList.add('opacity-100');
+            } else {
+                scrollBtn.classList.add('opacity-0', 'pointer-events-none');
+                scrollBtn.classList.remove('opacity-100');
+            }
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
