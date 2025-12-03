@@ -59,15 +59,6 @@
       white-space: nowrap;
       font-size: 0.875rem;
     }
-
-    /* Desktop hover */
-    .dropdown:hover .dropdown-menu:not(.locations) {
-      display: block;
-    }
-    
-    .dropdown:hover .dropdown-menu.locations {
-      display: grid;
-    }
   }
 
   /* Mobile menu */
@@ -152,9 +143,9 @@
 
         <!-- Locations Dropdown -->
         <div class="dropdown" data-dropdown>
-          <span class="text-gray-700 hover:text-blue-600 flex items-center cursor-pointer transition" data-dropdown-toggle>
-            Locations
-            <svg class="w-4 h-4 ml-1 dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <span class="text-gray-700 hover:text-blue-600 flex items-center transition">
+            <a href="/locations" class="hover:text-blue-600">Locations</a>
+            <svg class="w-4 h-4 ml-1 dropdown-arrow cursor-pointer" data-dropdown-toggle fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
             </svg>
           </span>
@@ -327,10 +318,10 @@
     toggle.addEventListener('click', (e) => {
       e.preventDefault();
       e.stopPropagation();
-      
+
       const dropdown = toggle.closest('.dropdown');
-      const menu = toggle.nextElementSibling;
-      
+      const menu = dropdown?.querySelector('.dropdown-menu');
+
       // Close other dropdowns
       document.querySelectorAll('.dropdown-menu.block').forEach(otherMenu => {
         if (otherMenu !== menu) {
@@ -338,9 +329,9 @@
           otherMenu.closest('.dropdown')?.classList.remove('active');
         }
       });
-      
+
       // Toggle current dropdown
-      menu.classList.toggle('block');
+      menu?.classList.toggle('block');
       dropdown?.classList.toggle('active');
     });
   });
